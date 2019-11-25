@@ -4,26 +4,26 @@
 }
 
 /* header */
-.appheader{
+.appHeader{
   background: yellow;
-  height: 10vh;
+  height: 15vh;
   }
 
   /* navigation */
-.appnavigation{
+.appNavigation{
   background: orange;
   height: 20vh;
   }
 
   /* main */
-.appmain{
+.appMain{
   background: blue;
   height: 50vh;
   }
 
   /* book */
 .book{
-  background: yellow;
+  background: lime;
   }
 
   /* news */
@@ -43,7 +43,7 @@
     background: aqua;
     }
      /* footer */
-  .footer{
+  .appfoter{
     background: lime;
     height: 15vh;
     }
