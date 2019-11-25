@@ -7,19 +7,19 @@
 /* header */
 .appHeader{
   background: yellow;
-  height: 15vh;
+
   }
 
   /* navigation */
 .appNavigation{
   background: orange;
-  height: 20vh;
+
   }
 
   /* main */
 .appMain{
   background: blue;
-  height: 50vh;
+
   display: flex;
   }
 
@@ -47,5 +47,5 @@
      /* footer */
   .appFooter{
     background: lime;
-    height: 15vh;
+    
     }
