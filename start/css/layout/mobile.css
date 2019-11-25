@@ -2,3 +2,24 @@
 body{
   font-size: 1.5rem;
 }
+.container{
+  /* flex-wrap: wrap; */
+  flex-flow:row wrap;
+}
+.appHeader, .appMain, .appFooter{
+  width:100%;
+}
+.appHeader{
+  width:100%;
+}
+.appNavigation{ 
+  width:70%;
+}
+.appMain{
+  /* flex-wrap:wrap; */
+  flex-flow:row wrap;
+
+}
+.book, .news, .board, .favorite, .twitter{
+  width:100%;
+}

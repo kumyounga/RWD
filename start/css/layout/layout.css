@@ -1,6 +1,7 @@
 /* Common Layout */
 .container{
   background:silver;
+  display:flex;
 }
 
 /* header */
@@ -19,6 +20,7 @@
 .appMain{
   background: blue;
   height: 50vh;
+  display: flex;
   }
 
   /* book */
@@ -43,7 +45,7 @@
     background: aqua;
     }
      /* footer */
-  .appfoter{
+  .appFooter{
     background: lime;
     height: 15vh;
     }
