@@ -1,1 +1,12 @@
 /* Typegraphy Style */
+/* Web Font -Spoga Han Sans */
+@import url("//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css");
+html{
+  font-size: 10px;
+}
+body{
+  font-family: 'Spoqa Han Sans', 'Sans-serif'; 
+  font-weight: 300;
+  color:#181818;
+  background-color: #fff;
+}
