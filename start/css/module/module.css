@@ -1,9 +1,19 @@
 /* Common Class */
 /* 버튼스타일 */
-.button{
+.button, .buttonNone{
   border:1px solid #333;
   border-radius: 3px;
   padding:0.5em 1em;
   font-size: 1em;
   cursor: pointer;
+}
+
+.buttonNone{
+  border:0;
+  padding: 0;
+  background: transparent;
+}
+.round{
+  border-radius: 15px;
+
 }

@@ -20,7 +20,10 @@ function render() {
 
  // 리사이즈 이벤트가 여러 번 발생해도 모드가 변경되지 않으면 함수 실행 중지
  if (mode === isMobile) {
-  return
+  returnfor (var i = 0; i < items.length; i++) {
+   var item = items[i]
+   item.classList.add('icon-plus')
+  }
  }
 
  // 모드가 변경되면, 모드의 상태 업데이트
@@ -30,10 +33,7 @@ function render() {
  if (isMobile) {
   btn.setAttribute('aria-haspopup', 'true')
 
-  for (var i = 0; i < items.length; i++) {
-   var item = items[i]
-   item.classList.add('icon-plus')
-  }
+  
 
   for (var i = 0; i < links.length; i++) {
    var link = links[i]
@@ -49,7 +49,7 @@ function render() {
   //   이벤트가 여러 차례 쌓이는 문제가 있으므로 로딩 시 1회만 연결해야 함.
   if (isPristine) {
    // 버튼(btn)을 클릭하면 내비게이션(nav) 요소를 찾아서
-   // nav-act라는 클래스를 추가하거나 제거 할 것(toggle)
+   // isAct라는 클래스를 추가하거나 제거 할 것(toggle)
    btn.addEventListener('click', function (e) {
     if (nav.classList.contains('isAct')) {
      btn.setAttribute('aria-label', '메뉴 닫기')
@@ -64,16 +64,16 @@ function render() {
    // 메뉴 버튼(.menu-item)을 클릭하면
    // 클릭한 버튼의 부모 요소의 형제 요소들을 찾아 menu-act라는 클래스를 삭제한다.
    // 클릭한 버튼의 부모 요소인 .menu-list에 menu-act라는 클래스를 추가한다.
-   for (var i = 0; i < links.length; i++) {
-    var link = items[i]
+   for (let i = 0; i < links.length; i++) {
+    let link = items[i]
     link.addEventListener('click', function (e) {
      e.preventDefault()
 
-     var _this = e.target
-     var _parent = _this.parentNode
+     let _this = e.target
+     let _parent = _this.parentNode
 
-     for (var i = 0; i < items.length; i++) {
-      var item = items[i]
+     for (let i = 0; i < items.length; i++) {
+      let item = items[i]
       item.classList.remove('menuAct')
       item.classList.remove('icon-minus')
       item.classList.add('icon-plus')
@@ -103,15 +103,17 @@ function render() {
 
  // 데스크탑 디바이스에서 실행 할 코드 블럭
  else {
-  for (var i = 0; i < items.length; i++) {
-   var item = items[i]
-   item.setAttribute('role', 'presentation')
+  for (let i = 0; i < items.length; i++) {
+   let item = items[i]
    item.classList.remove('icon-plus')
    item.classList.remove('icon-minus')
+   item.classList.add('icon-star')
+
   }
-  for (var i = 0; i < links.length; i++) {
-   var link = links[i]
-   link.classList.add('icon-star')
+  for (let i = 0; i < links.length; i++) {
+   let link = links[i]
+   link.setAttribute('role', 'presentation')
+
   }
  }
 }
