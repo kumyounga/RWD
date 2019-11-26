@@ -1,2 +1,12 @@
 /* Common Hidden Content */
 
+legend, .ally-hidden{
+  background: orange;
+  position: absolute;
+width:1px;
+height: 1px;
+overflow:hidden;
+clip:rect(0,0,0,0);
+clip-path: polygon(0 0, 0 0,0 0);
+
+}
