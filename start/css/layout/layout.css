@@ -4,9 +4,7 @@
   box-sizing: border-box;
 }
 
-
 .container{
-  background:silver;
   display:flex;
 }
 
@@ -21,11 +19,7 @@
   display:inline-block;
   padding: 0.5em 1em;
 }
-  /* navigation */
-.appNavigation{
-  background: orange;
 
-  }
 
   /* main */
 .appMain{

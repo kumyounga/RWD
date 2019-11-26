@@ -17,7 +17,7 @@ body{
 .appHeader{
   display: flex;
   flex-flow: row wrap;
-  padding-top:1em;
+  padding-bottom:1em;
  background: #38302e;
 }
 .brand, .memberOnly, .searchForm{

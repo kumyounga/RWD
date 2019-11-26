@@ -1,6 +1,6 @@
 /* Common Hidden Content */
 
-legend, .ally-hidden{
+legend, .allyHidden{
   background: orange;
   position: absolute;
 width:1px;
