@@ -7,7 +7,7 @@ body{
   align-items: center;
 }
 
-.appHeader, .appMain{
+.appHeader,.menu__list, .appMain{
   width:1000px;
 }
 /* 헤더 */
@@ -59,8 +59,44 @@ margin-top:-30px;
  width:100%;
 }
 /* 메인메뉴 */
+.menu{
+  background: #988574;
+}
 .buttonBurger{
   display: none;
+}
+.menu__list{
+  margin-left: auto;
+  margin-right: auto;
+  overflow:hidden;
+  padding-top:1em;
+  padding-bottom: 1em;
+  padding: 1em;
+  color:#fff;
+}
+
+.menu__item{
+  float:left;
+  margin:0 22px;
+}
+.menu__link{
+  cursor:default;
+  text-shadow:1px 0 0 #000,0 1px 0 #000,0 0 1px #000,#000 0 0 1px;
+}
+.menu__link:hover, .menu__link:focus{
+  color:inherit;
+}
+.menu__subMenu{
+padding-left: 1.5em;
+}
+
+.menu__subMenu a{
+  display: block;
+  padding:0.5em 1em;
+  margin-top: 0.5em;
+}
+.menu__subMenu a:hover, .menu__subMenu a:focus{
+  color:#ff0;
 }
 .appMain{
   flex-flow:row wrap;
