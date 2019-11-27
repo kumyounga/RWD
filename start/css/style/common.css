@@ -129,24 +129,63 @@ text-overflow: ellipsis;
 .favorite__list a{
   display: inline-block;
   padding:0.5em 0;
-  background:yellow;
 
 }
-.favorite__list a:favor::after{
+.favorite__list a:hover::after{
  content:attr(data_tooltip);
  position:absolute;
  top:70%;
  left:70%;
  white-space:nowrap;
  color:#fff;
- background: #eea60a;
  border:1px solid #333;
  padding:0.5em 1em;
  box-shadow:3px 3px 0 0 #333;
  border-radius:3px;
+ z-index:10;
 }
-
+/* 트위터(CSS Grid 레이아웃 활용 예시 */
+.twitter__container{
+  display:grid;
+  grid-template-columns: 4fr  1fr;
+  grid-template-rows: auto;
+  column-gap: 1em;
+}
+.twitter__userInfo dd{
+  margin-left:0;
+  display: inline-block;
+}
+.twitter_userProfile{
+  grid-area:1 / 2 / 4 / 3;
+  margin:0;
+  text-align:center;
+}
+.twitter_date{
+text-align: center;
+}
  /* footer */
  .appFooter{
-  background: lime;
+   padding:3em 20px;
+  background: #333;
+  background:
+linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+background-color: #131313;
+background-size: 20px 20px;;
+  color:#fff;
+  line-height: 1.5;
+  }
+  .address{
+    font-style: normal;
+    margin-bottom: 1em;
+
+  }
+  .copyright{
+    font-size:1em;
+    text-transform: uppercase;
+
   }

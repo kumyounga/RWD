@@ -157,8 +157,13 @@ margin:1em 0;
 .appMain{
   /* flex-wrap:wrap; */
   flex-flow:row wrap;
+  padding: 1em 20px;
 
 }
 .book, .news, .board, .favorite, .twitter{
   width:100%;
+}
+/* 푸터 */
+.address span{
+  display: block;
 }

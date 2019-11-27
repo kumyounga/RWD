@@ -8,7 +8,9 @@ body{
 }
 
 .appHeader,.menu__list, .appMain{
-  width:1000px;
+  /* width:1000px; */
+  width:78.125%;
+  max-width: 1800px;
 }
 /* 헤더 */
 .appHeader{
@@ -73,12 +75,16 @@ margin-top:-30px;
   padding-bottom: 1em;
   padding: 1em;
   color:#fff;
+  display:flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
 }
 
-.menu__item{
+/* .menu__item{
   float:left;
-  margin:0 22px;
-}
+  margin:0 22px; 
+
+}*/
 .menu__link{
   cursor:default;
   text-shadow:1px 0 0 #000,0 1px 0 #000,0 0 1px #000,#000 0 0 1px;
@@ -104,17 +110,31 @@ padding-left: 1.5em;
 }
 
 .book{
-  width:320px;
+  /* width:320px; */
+  width:32%;
+
 }
-.news{width:660px;
+.news{
+  /* width:660px; */
+  width:66%;
+
 }
 .board{
-  width:320px;
+  /* width:320px; */
+  width:32%;
+
 }
 .favorite{
   order:1;
-  width:240px;
+  /* width:240px; */
+  width:24%;
+
 }
 .twitter{
   width:400px;
+}
+/* 푸터 */
+.appFooter{
+  text-align: center;
+
 }
