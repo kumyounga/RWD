@@ -1,4 +1,6 @@
 /* Common Class */
+
+
 /* 버튼스타일 */
 .button, .buttonNone{
   border:1px solid #333;
@@ -16,4 +18,75 @@
 .round{
   border-radius: 15px;
 
+}
+
+/* 글자색상별테마 */
+.themeGreen{
+  color:#abd375;
+}
+.themeYellow {
+  color: #e8ca58;
+ }
+ 
+ .themeBrown {
+  color: #c7b39a;
+ }
+ 
+ .themeSkyblue {
+  color: #6aaee6;
+ }
+ 
+ .themeOrange {
+  color: #eea60a;
+ }
+ /* 반응형콘텐츠 */
+ .responsive{
+ max-width:100%;
+ height:auto;
+ }
+/* IR, Sprite(스프라이트) 배경 이미지 */
+.sprite{
+  background: url("./../images/sprite_main.png") no-repeat;
+  padding-left:65px;
+  height:60px;
+}
+.spriteBook{
+  background-position: 0 0;
+}
+.spriteNews{
+  background-position: 0 -230px;
+}
+.spriteBoard{
+  background-position: 0 -115px;
+}
+.spriteFavorite{
+  background-position: 0 -345px;
+}
+.spriteTwitter{
+  background-position: 0 -460px;
+}
+
+/* 반응형 iframe 콘텐}*/
+.iframeContainer{
+background:yellow;
+padding-top:56.25%;
+height:0;
+position:relative;
+}
+.iframe4To3 {
+  padding-top: 75%;
+ }
+ 
+ .iframe16To9 {
+  padding-top: 56.25%;
+ }
+ .iframe21To9 {
+  padding-top: 42.857142857142854%;
+ }
+.iframeContainer iframe{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
 }

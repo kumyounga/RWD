@@ -21,36 +21,4 @@
 }
 
 
-  /* main */
-.appMain{
-  background: blue;
 
-  display: flex;
-  }
-
-  /* book */
-.book{
-  background: lime;
-  }
-
-  /* news */
-.news{
-  background: yellow;
-  }
-   /*board */
-.board{
-  background: blue;
-  }
-   /* favorite */
-.favorite{
-  background: tomato;
-  }
-  /*twitter*/
-  .twitter{
-    background: aqua;
-    }
-     /* footer */
-  .appFooter{
-    background: lime;
-    
-    }
