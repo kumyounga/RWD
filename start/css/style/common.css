@@ -106,8 +106,46 @@ text-overflow: ellipsis;
   top:0;
   right:-1em;
   padding:1em;
-  background: yellow;
 }
+/* 인기사이트 */
+.favorite__list{
+  list-style-type: none;
+
+}
+.favorite__list li{
+  margin-top:0.5em;
+  counter-increment: number;
+}
+.favorite__list li::before{
+  display: inline-block;
+ content: counter(number);
+ background: #eea60a;
+ color:#fff;
+ padding:0.5em 1em 0.75em;
+ border-radius: 50%;
+ margin-right: 0.5em;
+}
+
+.favorite__list a{
+  display: inline-block;
+  padding:0.5em 0;
+  background:yellow;
+
+}
+.favorite__list a:favor::after{
+ content:attr(data_tooltip);
+ position:absolute;
+ top:70%;
+ left:70%;
+ white-space:nowrap;
+ color:#fff;
+ background: #eea60a;
+ border:1px solid #333;
+ padding:0.5em 1em;
+ box-shadow:3px 3px 0 0 #333;
+ border-radius:3px;
+}
+
  /* footer */
  .appFooter{
   background: lime;
